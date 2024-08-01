@@ -1,6 +1,6 @@
 ## Ionic demo app
 
-A demo app to demostrate slow back button transition on IOS while you navigate to the previous page.
+Ionix demo app
 
 ## Build
 
@@ -10,9 +10,10 @@ ionic build
 ionic cap run ios -l --external
 ```
 
-## Test
+## ion-semgnent horizontal transition issue
 
 
+See animation issue on video below:
 
 https://github.com/user-attachments/assets/f6faa9f9-83a3-4701-b89b-d95608f5f3a5
 
