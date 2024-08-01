@@ -1,0 +1,346 @@
+
+mwg-home-header {
+	.greeting-loader {
+		height: 5vh;
+		width: 35vw;
+		display: inline-block;
+		margin-left: 16px;
+		margin-bottom: 8px;
+		border-radius: 8px;
+	}
+
+	.header-button-loader {
+		width: 10vw;
+		height: 10vw;
+		border-radius: 50px;
+		float: right;
+		margin-right: 16px;
+	}
+
+	ion-title.mwg-title-main {
+		font-family: $ion-font-family;
+		font-style: normal;
+		font-weight: bold;
+		font-size: $mwg-font-size-10;
+		line-height: 33px;
+		letter-spacing: -0.01em;
+		text-transform: capitalize;
+		color: $mwg-color-gray__title;
+	}
+
+	ion-buttons {
+		margin-right: 16px;
+		color: $mwg-color-blue;
+		display: flex;
+		height: 36px;
+
+		mwg-icon {
+			width: 32px;
+			display: inline-block;
+		}
+
+		ion-label {
+			margin-left: 5px;
+			font-weight: 500;
+		}
+
+		.sign-in {
+			display: flex;
+			align-items: center;
+		}
+
+		.notifications {
+			margin-right: 12px;
+		}
+
+		.avatar {
+			transform: scale(1.2);
+		}
+	}
+
+	ion-menu-toggle {
+		mwg-icon {
+			color: $mwg-color-blue;
+		}
+	}
+
+	&.ipad-or-tablet {
+		.header-button-loader {
+			width: 5vw;
+			height: 5vw;
+		}
+	}
+}
+
+.home-container {
+	height: 100%;
+	position: relative;
+	margin-top: 0;
+
+	.home-card-container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 15px;
+		height: 175px;
+		padding: 0 16px;
+	}
+
+	.renew-membership {
+		display: block;
+		position: relative;
+		box-shadow: 0px 0px 10px 0px rgba(77, 138, 240, 0.3);
+		border-radius: 8px;
+		background: linear-gradient(102.67deg, #d4241a 18.35%, #69284b 50%, #002b7b 81.65%);
+		grid-column: 1;
+		grid-row: 1/3;
+
+		ion-item {
+			display: flex;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			border-radius: 8px;
+			background-color: var(--mwg-color-on-primary);
+			border: 3px solid transparent;
+			background-origin: border-box;
+			background-clip: content-box, border-box;
+		}
+
+		.home-title-container {
+			h2 {
+				margin-left: 0;
+				margin-top: 0px;
+				font-size: 1.1rem;
+			}
+		}
+	}
+
+	.home-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 15px;
+		padding: 16px;
+
+		ion-item {
+			min-height: 57px;
+			box-shadow: 0px 0px 10px 0px rgba(77, 138, 240, 0.3);
+			border-radius: 8px;
+			--padding-start: 16px;
+			--padding-end: 0px;
+			--inner-padding-end: 0px;
+			display: flex;
+
+			mwg-icon {
+				width: 26px;
+				color: var(--mwg-color-secondary);
+			}
+
+			.home-title-container {
+				white-space: normal !important;
+			}
+
+			h2 {
+				text-align: left;
+				margin: 0 0 0 10px;
+				line-height: initial;
+				font-size: 0.85rem;
+				color: var(--mwg-color-secondary);
+			}
+
+			span {
+				font-size: 0.8rem;
+				font-weight: 500;
+				color: var(--mwg-color-secondary);
+			}
+		}
+
+		.discounts {
+			mwg-icon {
+				width: 21px;
+			}
+		}
+
+		.find-a-branch {
+			mwg-icon {
+				margin-left: 3px;
+			}
+		}
+
+		.find-a-branch,
+		.cheapest-gas-nearby {
+			mwg-icon {
+				width: 16px;
+			}
+		}
+
+		.electric-vehicles {
+			mwg-icon {
+				width: 18px;
+				transform: scale(1.1);
+			}
+		}
+
+		.auto-repair {
+			mwg-icon {
+				width: 18px;
+				transform: scale(1.1);
+			}
+		}
+
+		.find-a-branch,
+		.smart-home-security,
+		.cheapest-gas-nearby {
+			.home-title-container {
+				h2 {
+					margin-left: 15px;
+				}
+			}
+		}
+	}
+
+	.home-loader {
+		position: absolute;
+		width: 100%;
+		height: 106%;
+		z-index: 100;
+		background-color: #ffffff;
+		margin-top: -16px;
+
+		&-container {
+			margin: 16px;
+		}
+
+		&-tile {
+			height: 22vh;
+			border-radius: 8px;
+		}
+
+		&-card-grid-container {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 15px;
+			margin: 12px 0;
+
+			.home-loader-card {
+				height: 5vh;
+				border-radius: 8px;
+			}
+		}
+
+		&-explore-aaa-title {
+			height: 3vh;
+			width: 40vw;
+			border-radius: 8px;
+			margin-top: 22px;
+		}
+
+		&-pill-container {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 15px;
+			margin: 12px 0;
+
+			.home-loader-pill {
+				height: 2vh;
+				border-radius: 8px;
+			}
+		}
+
+		&-explore-aaa {
+			height: 35vh;
+			border-top-left-radius: 8px;
+			border-top-right-radius: 8px;
+		}
+	}
+
+	.home-content {
+		.explore-section {
+			flex: 1 1 auto;
+			height: 0;
+		}
+	}
+
+	.home-card-container {
+		margin-bottom: 16px;
+	}
+
+	&.ipad-or-tablet {
+		.home-card-container {
+			grid-gap: 15px;
+			height: 216px;
+
+			&.three-cards {
+				grid-template-columns: repeat(3, 1fr);
+			}
+
+			.renew-membership {
+				height: 216px;
+
+				h2 {
+					margin-top: 8px;
+					font-size: 20px;
+					line-height: 28px;
+					letter-spacing: -0.05em;
+					color: var(--mwg-color-secondary);
+				}
+
+				span {
+					font-size: 0.9rem;
+					font-weight: 500;
+					color: var(--mwg-color-secondary);
+				}
+			}
+		}
+
+		.renew-membership {
+			grid-column: initial;
+			grid-row: initial;
+
+			ion-item {
+				position: initial;
+			}
+		}
+
+		.home-grid {
+			grid-template-columns: repeat(3, 1fr);
+
+			.renew-membership {
+				display: none;
+			}
+
+			.smart-home-security {
+				mwg-icon {
+					width: 21px;
+				}
+			}
+
+			.find-a-branch {
+				mwg-icon {
+					margin-left: 6px;
+				}
+
+				h2 {
+					margin-left: 16px;
+				}
+			}
+		}
+	}
+}
+
+.notification-counter {
+	@include mwg-title-size-2($mwg-color-white, 500);
+	line-height: 16px;
+	position: absolute;
+	top: 2px;
+	left: 18px;
+	width: 16px;
+	height: 16px;
+	background-color: var(--mwg-color-primary);
+	border: 1.5px solid $mwg-color-white;
+	z-index: 1;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+}

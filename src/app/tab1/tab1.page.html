@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab toolbar
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-segment mode="md" [(ngModel)]="selectedSegment" scrollable>
+    <ion-segment-button
+      mode="md"
+      [value]="item"
+      (click)="_segmentSelected(i)"
+      *ngFor="let item of segmentList; let i = index"
+      id="ion-segment-button-{{ i }}"
+    >
+      <ion-label>{{ item }}</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <!-- <ion-card role="button" (click)="openPage($event)">
+    <ion-card-content>
+      <h2 class="title">Click me</h2>
+    </ion-card-content>
+  </ion-card> -->
+</ion-content>
