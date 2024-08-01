@@ -12,4 +12,7 @@ ionic cap run ios -l --external
 
 ## Test
 
-Open the app, click on on click me card. On the next page click the back button and notice the slow header fadeout transition.
+
+
+https://github.com/user-attachments/assets/f6faa9f9-83a3-4701-b89b-d95608f5f3a5
+
