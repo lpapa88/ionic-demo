@@ -1,0 +1,110 @@
+ion-grid {
+	padding: 0;
+	height: 100%;
+	position: relative;
+}
+
+ion-row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.custom-modal-wrapper {
+	background: #fff;
+	height: 100%;
+}
+
+.close-button {
+	&-wrapper {
+		align-items: end;
+		justify-content: end;
+		-webkit-justify-content: flex-end;
+		padding-top: 44px;
+		padding-right: 16px;
+	}
+}
+
+.aaa-icon {
+	margin-top: 24px;
+}
+
+.title {
+	&-row {
+		margin-top: 24px;
+		padding-left: 30px;
+		padding-right: 30px;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&-label {
+		color: blue;
+	}
+}
+
+.description {
+	&-row {
+		height: 100%;
+		align-items: flex-start;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	&-content {
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		padding-left: 30px;
+		padding-right: 30px;
+
+		&-normal {
+			font-weight: normal;
+			text-align: center;
+			align-items: center;
+			justify-content: center;
+		}
+
+		&-bold {
+			font-weight: bold;
+			text-align: center;
+			align-items: center;
+			justify-content: center;
+		}
+
+		&-notitle {
+			margin-top: 2px;
+			text-align: center;
+			align-items: center;
+			justify-content: center;
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		&-title {
+			margin-top: 16px;
+			text-align: center;
+			align-items: center;
+			justify-content: center;
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+	}
+}
+
+.buttons {
+	&-wrapper {
+		position: absolute;
+		bottom: 36px;
+		left: 30px;
+		right: 30px;
+	}
+}
+
+.secondary-button {
+	margin-top: 8px;
+}
+
+.tertiary-button {
+	margin-top: 16px;
+}

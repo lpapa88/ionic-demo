@@ -9,6 +9,31 @@
   </ion-header> -->
   
   <ion-content class="ion-padding">
-	<h1>Page Two</h1>
-	<p>Use the back button to navigate to the previous page.</p>
+	<h1>Page with modal sheet and multiple modals</h1>
+	<p>When clicking submit button a second modal will appear, which in turn when closed should navigate to another page. NOTE that bottom sheet modal will stay open.</p>
+
+	<ion-modal
+		[isOpen]="true"
+		[initialBreakpoint]="0.25" [breakpoints]="[0.25]"
+		[backdropDismiss]="false"
+		[backdropBreakpoint]="[1]"
+		mode="ios"
+		[handle]="false"
+		[leaveAnimation]="leaveAnimation"
+	>
+		<ng-template>
+			<ng-container [ngTemplateOutlet]="submitButton"></ng-container>
+		</ng-template>
+	</ion-modal>
   </ion-content>
+
+  <ng-template #submitButton>
+	<div class="button-bottom-fixed-container">
+		<div class="button-container">
+			<ion-button (click)="submit()" style="width: 100%;">
+				Submit
+			</ion-button>
+		</div>
+		<p>Modal is used as bottom sheet to hide the bottom tab bar</p>
+	</div>
+</ng-template>

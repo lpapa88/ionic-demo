@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MwgHeaderComponent } from './mwg-header/mwg-header.component';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
 	imports: [
@@ -11,8 +12,8 @@ import { MwgHeaderComponent } from './mwg-header/mwg-header.component';
 		ReactiveFormsModule,
 		IonicModule,
 	],
-	declarations: [MwgHeaderComponent],
-    exports: [MwgHeaderComponent],
+	declarations: [MwgHeaderComponent, ModalComponent],
+    exports: [MwgHeaderComponent, ModalComponent],
 	providers: [],
 })
 export class SharedModule {}
