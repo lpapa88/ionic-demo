@@ -34,6 +34,9 @@ export class MembershipDashboardPage {
 		modal.present();
 		const { role } = await modal.onWillDismiss();
 		if (role === 'confirm') {
+			// NOTE: the call to modalCtrl.dismiss() will close the dynamic modal but not the bottom sheet modal...,
+			// What is the best way to handle this? shall we use @ViewChild on the inline
+			// modal and close it explicitly as well?
 			this.modalCtrl.dismiss();
 			this.router.navigate(['/'], { replaceUrl: true });
 		}
