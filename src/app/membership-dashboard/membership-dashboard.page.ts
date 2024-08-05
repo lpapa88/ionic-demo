@@ -10,13 +10,9 @@ export let tempThis: any;
 	styleUrls: ['./membership-dashboard.page.scss'],
 })
 export class MembershipDashboardPage {
-	public state = "init";
-
 	constructor(private animationCtrl: AnimationController, private modalCtrl: ModalController, private router: Router) {}
 
 	ionViewWillLeave() {
-		// const isModalOpen = this.modalCtrl.getTop();
-		// if (isModalOpen) this.modalCtrl.dismiss();
 		this.modalCtrl.dismiss();
 	}
 
@@ -36,9 +32,7 @@ export class MembershipDashboardPage {
 			},
 		})
 		modal.present();
-		const { data, role } = await modal.onWillDismiss();
-		console.log(">>>>> data", data);
-		console.log(">>>>> role", role);
+		const { role } = await modal.onWillDismiss();
 		if (role === 'confirm') {
 			this.modalCtrl.dismiss();
 			this.router.navigate(['/'], { replaceUrl: true });
