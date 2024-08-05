@@ -33,3 +33,9 @@ This is more a question to see what is the recommended way to handle multiple mo
 5. The call to `this.modalCtrl.dismiss();` will close the dynamic modal but not the inline one which will still be visible on the previous page after the call to `this.router.navigate`
 
 Is this the intented behaviour or do we need to close the inline modal explicitly using @ViewChild to reference it or so. 
+
+
+
+https://github.com/user-attachments/assets/6b63fa16-6d49-4a62-b5d5-ff43c8edd39c
+
+
